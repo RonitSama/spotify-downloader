@@ -26,9 +26,9 @@ except ValueError as expt:
     sys.exit(1)
 
 # connect to Spotify playlist
-client_credentials_manager = SpotifyClientCredentials(
-    client_id=SPOTIFY_CLIENT_ID, client_secret=SPOTIFY_CLIENT_SECRET)
-sp = Spotify(client_credentials_manager=client_credentials_manager)
+sp = Spotify(client_credentials_manager=
+             SpotifyClientCredentials(client_id=SPOTIFY_CLIENT_ID,
+                                      client_secret=SPOTIFY_CLIENT_SECRET))
 results = sp.playlist_tracks(playlist_id)
 
 # gather all songs in playlist
