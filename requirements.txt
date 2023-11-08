@@ -1,0 +1,4 @@
+beautifulsoup4==4.12.2
+Requests==2.31.0
+spotipy==2.23.0
+ytmdl==2023.2.28
