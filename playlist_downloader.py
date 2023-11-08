@@ -21,7 +21,7 @@ try:
             'open.spotify.com/playlist/')+len('open.spotify.com/playlist/'):]
     if '?si=' in playlist_id:
         playlist_id = playlist_id[:playlist_id.index('?si=')]
-except ValueError:
+except ValueError as expt:
     print(f'\nInvalid playlist: {playlist_id}')
     sys.exit(1)
 
